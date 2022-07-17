@@ -5,7 +5,7 @@
  */
 
 function solution($A) {
-    sort($A);
+    sort($A, SORT_NUMERIC);
     foreach($A as $k => $n) {
         if ($n !== $k + 1) {
             return 0;
